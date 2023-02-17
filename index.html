@@ -10,7 +10,11 @@
       //   document.documentElement.clientHeight = 300;
       //   document.documentElement.clientWidth = 300;
       window.onresize = function (event) {
-        alert(document.documentElement.clientHeight);
+        alert(
+          document.documentElement.clientHeight +
+            " " +
+            window.screen.availHeight
+        );
       };
     </script>
   </head>
