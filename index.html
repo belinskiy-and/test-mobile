@@ -7,8 +7,10 @@
     <title>Test mobile</title>
     <link rel="stylesheet" href="./style/style.css" />
     <script>
+      //   document.documentElement.clientHeight = 300;
+      //   document.documentElement.clientWidth = 300;
       window.onresize = function (event) {
-        alert("onresize");
+        alert(document.documentElement.clientHeight);
       };
     </script>
   </head>
