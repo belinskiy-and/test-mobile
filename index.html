@@ -78,6 +78,10 @@
 
       element.style.top = `${window.outerHeight - 80}px`;
 
+      document.addEventListener("touchmove", function (e) {
+        e.preventDefault();
+      });
+
       //   document.getElementsByClassName("button-wrapper")[0].style.top = "500px";
       window.onresize = function (event) {
         // alert(
@@ -95,6 +99,7 @@
 
       window.addEventListener("scroll", function (e) {
         element.style.top = `${window.outerHeight - 80}px`;
+        console.log("scroll");
       });
     </script>
   </body>
