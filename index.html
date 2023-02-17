@@ -6,21 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test mobile</title>
     <link rel="stylesheet" href="./style/style.css" />
-    <script>
-      //   document.documentElement.clientHeight = 300;
-      //   document.documentElement.clientWidth = 300;
-      window.onresize = function (event) {
-        alert(
-          document.documentElement.clientHeight +
-            " " +
-            window.screen.availHeight +
-            " " +
-            window.outerHeight +
-            " " +
-            window.innerHeight
-        );
-      };
-    </script>
   </head>
   <body>
     <header class="header">
@@ -85,5 +70,28 @@
       Ducimus nulla sint reiciendis dignissimos obcaecati blanditiis ea, autem
       non, veniam repellendus tempore vitae.
     </main>
+
+    <script>
+      //   document.documentElement.clientHeight = 300;
+      //   document.documentElement.clientWidth = 300;
+      const element = document.querySelector(".button-wrapper");
+
+      element.style.top = `${window.outerHeight - 80}px`;
+
+      //   document.getElementsByClassName("button-wrapper")[0].style.top = "500px";
+      window.onresize = function (event) {
+        // alert(
+        //   document.documentElement.clientHeight +
+        //     " " +
+        //     window.screen.availHeight +
+        //     " " +
+        //     window.outerHeight +
+        //     " " +
+        //     window.innerHeight
+        // );
+
+        element.style.top = `${window.outerHeight - 80}px`;
+      };
+    </script>
   </body>
 </html>
