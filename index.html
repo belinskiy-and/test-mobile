@@ -80,27 +80,33 @@
 
       document.addEventListener("touchmove", function (e) {
         element.style.top = `${window.outerHeight - 80}px`;
-        // e.preventDefault();
+        e.preventDefault();
+        // console.log(e);
       });
 
-      //   document.getElementsByClassName("button-wrapper")[0].style.top = "500px";
-      window.onresize = function (event) {
-        // alert(
-        //   document.documentElement.clientHeight +
-        //     " " +
-        //     window.screen.availHeight +
-        //     " " +
-        //     window.outerHeight +
-        //     " " +
-        //     window.innerHeight
-        // );
+      //   //   document.getElementsByClassName("button-wrapper")[0].style.top = "500px";
+      //   window.onresize = function (event) {
+      //     // alert(
+      //     //   document.documentElement.clientHeight +
+      //     //     " " +
+      //     //     window.screen.availHeight +
+      //     //     " " +
+      //     //     window.outerHeight +
+      //     //     " " +
+      //     //     window.innerHeight
+      //     // );
 
-        element.style.top = `${window.outerHeight - 80}px`;
-      };
+      //     element.style.top = `${window.outerHeight - 80}px`;
+      //   };
 
-      window.addEventListener("scroll", function (e) {
-        element.style.top = `${window.outerHeight - 80}px`;
-      });
+      //   window.addEventListener("scroll", function (e) {
+      //     element.style.top = `${window.outerHeight - 80}px`;
+      //   });
+
+      //   let vh = window.innerHeight * 0.01;
+      // Then we set the value in the --vh custom property to the root of the document
+      //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+      //   element.style.top = `${vh - 180}px`;
     </script>
   </body>
 </html>
