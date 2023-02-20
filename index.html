@@ -74,9 +74,9 @@
     <script>
       //   document.documentElement.clientHeight = 300;
       //   document.documentElement.clientWidth = 300;
-      //   const element = document.querySelector(".button-wrapper");
+      const element = document.querySelector(".button-wrapper");
 
-      //   element.style.top = `${window.outerHeight - 80}px`;
+      element.style.top = `${window.outerHeight - 80}px`;
 
       //   document.addEventListener("touchmove", function (e) {
       //     element.style.top = `${window.outerHeight - 80}px`;
@@ -85,19 +85,19 @@
       //   });
 
       //   //   document.getElementsByClassName("button-wrapper")[0].style.top = "500px";
-      //   window.onresize = function (event) {
-      //     // alert(
-      //     //   document.documentElement.clientHeight +
-      //     //     " " +
-      //     //     window.screen.availHeight +
-      //     //     " " +
-      //     //     window.outerHeight +
-      //     //     " " +
-      //     //     window.innerHeight
-      //     // );
+      window.onresize = function (event) {
+        // alert(
+        //   document.documentElement.clientHeight +
+        //     " " +
+        //     window.screen.availHeight +
+        //     " " +
+        //     window.outerHeight +
+        //     " " +
+        //     window.innerHeight
+        // );
 
-      //     element.style.top = `${window.outerHeight - 80}px`;
-      //   };
+        element.style.top = `${window.outerHeight - 80}px`;
+      };
 
       //   window.addEventListener("scroll", function (e) {
       //     element.style.top = `${window.outerHeight - 80}px`;
