@@ -26,7 +26,6 @@ body {
 .button-wrapper {
   position: absolute;
   top: calc(100vh - 80px);
-  /* top: calc(var(--vh, 1vh) - 80px); */
 
   display: flex;
   justify-content: center;
