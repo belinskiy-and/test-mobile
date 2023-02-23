@@ -72,41 +72,13 @@
     </main>
 
     <script>
-      //   document.documentElement.clientHeight = 300;
-      //   document.documentElement.clientWidth = 300;
       const element = document.querySelector(".button-wrapper");
 
       element.style.top = `${window.innerHeight - 80}px`;
 
-      //   document.addEventListener("touchmove", function (e) {
-      //     element.style.top = `${window.outerHeight - 80}px`;
-      //     // e.preventDefault();
-      //     // console.log(e);
-      //   });
-
-      //   //   document.getElementsByClassName("button-wrapper")[0].style.top = "500px";
       window.onresize = function (event) {
-        // alert(
-        //   document.documentElement.clientHeight +
-        //     " " +
-        //     window.screen.availHeight +
-        //     " " +
-        //     window.outerHeight +
-        //     " " +
-        //     window.innerHeight
-        // );
-
         element.style.top = `${window.innerHeight - 80}px`;
       };
-
-      //   window.addEventListener("scroll", function (e) {
-      //     element.style.top = `${window.outerHeight - 80}px`;
-      //   });
-
-      //   let vh = window.innerHeight * 0.01;
-      // Then we set the value in the --vh custom property to the root of the document
-      //   document.documentElement.style.setProperty("--vh", `${vh}px`);
-      //   element.style.top = `${vh - 180}px`;
     </script>
   </body>
 </html>
